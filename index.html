@@ -2,27 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="main-header">
         <div class="container">
             <nav class="main-nav">
-                    <ul class="main-menu">
+                <ul class="main-menu">
                     <li class="main-menu-item">
-                        <a href="#">Информация</a>
+                        <a href="#"><h3>Информация</h3></a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="#">Фото и видео</a>
+                        <a href="#"><h3>Фото и видео</h3></a>
                     </li>
 					<li class="main-menu-item-logo">
-					<a href="#" class="logo"><img src="http://placehold.it/100x100" alt="Главная"></a>
+					<a href="#" class="logo"><img src="img/logo.png" alt="Главная"></a>
 					</li>
                     <li class="main-menu-item">
-                        <a href="#">Карта штата</a>
+                        <a href="#"><h3>Карта штата</h3></a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="#">Гостиницы</a>
+                        <a href="#"><h3>Гостиницы</h3></a>
                     </li>
                 </ul>
             </nav>
@@ -30,79 +31,73 @@
     </header>
     <main class="container">
         <section class="welcome-box">
-            <div class="welcome-header">
-                <p class="first-text">Welcome</p>
-                <p class="second-text">to the gorgeous</p>
-            </div>
-            <h1>SEDONA</h1>
-            <p class="quote">"Because the Grand Canyon sucks!"</p>
-            <div class="mask"></div>
+            <img src='img/welcome.jpg' width="1200px" height="780px">
         </section>
-        <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <section class="reasons">
             <div class="reason-textimage">
                 <div class="reasons-text">
-                    <p>Настоящий городок</p>
+                    <h2>Настоящий городок</h2>
                     <p class="number">№1</p>
                     <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img src="http://placehold.it/150x100" alt="Седона">
+                <img src="img/pic1.jpg" width="800" height="256" alt="Седона">
             </div>
             <div class="reasons"> <!-- нужен ли родительский элемент? -->
                 <div class="reasons-text"> <!-- Нужны ли first second в названии класса для фона или через потомков features делать -->
-                    <p>Жилье</p>
+                    <h2>Жилье</h2>
                     <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
                 </div>
                 <div class="reasons-text">
-                    <p>Еда</p>
+                    <h2>Еда</h2>
                     <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
                 </div>
                 <div class="reasons-text">
-                    <p>Сувениры</p>
+                    <h2>Сувениры</h2>
                     <p>Не только китайского, но и местного производства!</p>
                 </div>
             </div>
             <div class="reasons-textimage">
                 <div class="reasons-text">
-                    <p>Там есть мост дьявола</p>
+                    <h2>Там есть мост дьявола</h2>
                     <p class="number">№2</p>
                     <p>Да, по нему можно пройти! Если, конечно, осмелитесь!</p>
                 </div>
-                <img src="http://placehold.it/150x100" alt="Мост дьявола">
+                <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
             </div>
             <div class="reasons-more">
                 <div class="reasons-text">
-                    <p>Небольшая площадь</p>
+                    <h2>Небольшая площадь</h2>
                     <p class="number">№3</p>
                     <p>Все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="reasons-text">
-                    <p>Красивая дорога</p>
+                    <h2>Красивая дорога</h2>
                     <p class="number">№4</p>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
                 <div class="reasons-text">
-                    <p>Мало туристов</p>
+                    <h2>Мало туристов</h2>
                     <p class="number">№5</p>
                     <p>Большинство едет в Гранд-Каньон и толпится там</p>
                 </div>
             </div>
         </section>
-        <h2>Заинтересовались?</h2>
+        <h2 class="big">Заинтересовались?</h2>
 		<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 		<div class="map">
 			<div class="search-hotel">
 				<a href="#" class='search-hotel-title'>Поиск гостиницы в Седоне</a>
 					<div class="search-hotel-appear">
 						<form class="search-form" action="#" method="post">
-							<label>Дата заезда:<input type="text" name="entrance" value="24 апреля 2016"> </label> <br>           <!-- Значок календаря -->
-							<label>Дата выезда:<input type="text" name="exit" value="4 июля 2016"> </label> <br>
-							<label for="adults">Взрослые:</label>
+							<label class="search_label">Дата заезда:<input type="text" name="entrance" value="24 апреля 2016"> </label> <br>           <!-- Значок календаря -->
+							<label class="search_label">Дата выезда:<input type="text" name="exit" value="4 июля 2016"> </label> <br>
+							<label class="search_label" for="adults">Взрослые:</label>
 							<button type="button" class="plus-adults">+</button>
 							<input type="text" name="adults" id="adults" size="1">
 							<button type="button" class="minus-adults">-</button>
-							<label for="kids">Дети</label>
+							<label class="search_label" for="kids">Дети</label>
 							<button type="button" class="plus-kids">+</button>
 							<input type="text" name="kids" id="kids" size="1">
 							<button type="button" class="minus-adults">-</button> <br>
