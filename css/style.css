@@ -3,6 +3,16 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
+	outline: 3px solid yellow;
+	min-width: 1200px;
+	margin: 0;
+	
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 h1, h2{
@@ -19,6 +29,11 @@ h3, .search-form label{
 	line-height: 26px;
 }
 
+.container{
+	margin: 0 auto;
+	width: 1200px;
+}
+
 h2.big{
 	font-size: 	30px;
 }
@@ -28,4 +43,109 @@ h2.big{
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
+}
+
+.main-header{
+	outline: 3px solid blue;
+	min-height: 56px;
+}
+
+.welcome-box{
+	height: 508px;
+	outline: 3px solid green;
+	}
+
+.headers{
+	outline: 3px solid green;
+	padding-top: 60px;
+	padding-bottom: 56px;
+	}
+
+.headers-text{
+	width: 576px;
+	margin: 0 auto;
+	min-height: 100px;
+	outline: 3px solid purple;
+}
+
+.reasons-textimage{
+	outline: 3px solid blue;
+	background-color: #81b3d2;
+	padding: 53px 0;
+}
+
+.reasons-textimage img {
+	float: right;
+}
+
+.reasons-textimage .reasons-text{
+	height: 150px;
+	outline: 3px solid cyan;
+	width: 400px;
+}
+
+.reasons-more{
+	min-height: 330px;
+	outline: 3px solid blue;	
+}
+
+.reasons-textblock{
+	width: 400px;
+	height: 330px;
+	float: left;
+	outline: 3px solid magenta;
+}
+
+.reasons-textimage .bridge{
+	float:right;
+}
+
+.secondrow {
+	min-height: 256px;
+}
+
+.secondrow .reasons-textblock{
+	height: 256px;
+}
+
+.headersblock{
+	min-height: 86px;
+	outline: 3px solid blue;
+	padding-top: 205px;
+}
+
+.map{
+	min-height: 473px;
+	outline: 3px solid blue;
+}
+
+.showform-btn{
+	display: block;
+	background-color: #766357;
+	min-height: 86px;
+	width: 568px;
+	margin: 0 auto;	
+}
+
+.search-hotel{
+	min-height: 395px;
+	width: 568px;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 2px solid orange;
+}
+
+footer{
+	min-height: 120px;
+	width: 1200px;
+	margin: 0 auto;
+	outline: 3px solid red;
+}
+
+.footerblock{
+	width: 400px;
+	height: 52px;
+	outline: 3px solid gray;
+	float: left;
+	margin-top: 34px;
 }
