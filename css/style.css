@@ -1,13 +1,14 @@
 body {
-	font-family: 'PTSans Regular';
+	font-family: 'PTSans', serif;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
 	outline: 3px solid yellow;
-	min-width: 1200px;
+    padding: 0;
 	margin: 0;
 	
 }
+
 
 .clearfix::after {
   content: "";
@@ -16,17 +17,21 @@ body {
 }
 
 h1, h2{
-	font-family: 'PTSans Bold' ;
+	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	font-size: 	21px;
 	line-height: 26px;
 }
 
-h3, .search-form label{
-	font-family: 'PTSans Bold' ;
+
+h3, .search-form label, .main-menu-item a{
+	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	font-size: 	14px;
 	line-height: 26px;
+    color: black;
+    text-decoration: none;
+  
 }
 
 .container{
@@ -39,7 +44,7 @@ h2.big{
 }
 
 .filterbox h3{
-	font-family: 'PTSans Bold' ;
+	font-family: 'PT Sans Bold' ;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
@@ -47,7 +52,7 @@ h2.big{
 
 .main-header{
 	outline: 3px solid blue;
-	min-height: 56px;
+	height: 56px;
 }
 
 .welcome-box{
@@ -57,39 +62,66 @@ h2.big{
 
 .headers{
 	outline: 3px solid green;
-	padding-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 56px;
+    height: 110px;
 	}
 
 .headers-text{
 	width: 576px;
 	margin: 0 auto;
-	min-height: 100px;
+    text-align: center;
 	outline: 3px solid purple;
 }
 
 .reasons-textimage{
 	outline: 3px solid blue;
-	background-color: #81b3d2;
-	padding: 53px 0;
+    background-image: url(../img/pic1.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height:256px;
 }
 
-.reasons-textimage img {
-	float: right;
+.bridge{
+    background-image: url(../img/bridge.jpg);
+    background-position: left;
 }
 
-.reasons-textimage .reasons-text{
-	height: 150px;
-	outline: 3px solid cyan;
-	width: 400px;
+
+
+.reasons-textbox{
+  box-sizing: border-box;
+  outline: 3px solid purple;
+  width: 400px;
+  height: 256px;
+  padding: 40px;
+  text-align: center;
+  background-color: #81b3d2;
+  color: white;
+  float: left;
 }
+
+.secondrow .reasons-textbox {
+  color: black;
+  background: white;
+}
+
+.right{
+  float: right;
+  }
 
 .reasons-more{
-	min-height: 330px;
 	outline: 3px solid blue;	
 }
 
 .reasons-textblock{
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 150px;
+    text-align: center;
 	width: 400px;
 	height: 330px;
 	float: left;
@@ -101,17 +133,19 @@ h2.big{
 }
 
 .secondrow {
-	min-height: 256px;
+	width: 1200px;
 }
 
 .secondrow .reasons-textblock{
 	height: 256px;
 }
 
-.headersblock{
-	min-height: 86px;
-	outline: 3px solid blue;
-	padding-top: 205px;
+.texts-cont{
+  min-height: 103px;
+  margin-top: 54px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .map{
@@ -125,6 +159,7 @@ h2.big{
 	min-height: 86px;
 	width: 568px;
 	margin: 0 auto;	
+    margin-top: 49px;
 }
 
 .search-hotel{
@@ -148,4 +183,66 @@ footer{
 	outline: 3px solid gray;
 	float: left;
 	margin-top: 34px;
+}
+
+.hotels-search{
+    min-height: 157px;
+    outline: 3px solid pink;
+    padding: 30px 72px;
+}
+
+.srh-form{
+    outline: 3px solid purple;
+    min-height: 155px;
+}
+
+.column-one, .column-two {
+    float: left;
+    min-height: 155px;
+    width: 150px;
+    outline: 3px solid red;
+    margin-right: 103px;
+}
+
+.column-three {
+    min-height: 155px;
+    float:right;
+    outline: 3px solid red;
+    width: 328px;
+}
+
+.sortbox{
+    min-height: 86px;
+    outline: 3px solid green;
+}
+
+
+
+.hotels-list-item{
+  min-height: 150px;
+  outline: 1px solid cyan;
+  margin-bottom: 1px;
+}
+
+.hotels-list-item:first-child{
+  margin-top: 1px;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+li{
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  font-size: 14px;
+  text-align: center;
+}
+
+a img{
+  z-index: 5;
+  position: relative;
 }

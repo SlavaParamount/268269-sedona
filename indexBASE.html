@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
@@ -9,68 +10,88 @@
    <header class="main-header container">
        <!-- <div class="container"> -->
             <nav class="main-nav">
-                
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                       <h3> <a href="#">Информация</a></h3>
+                    </li>
+                    <li class="main-menu-item">
+                       <h3> <a href="#">Фото и видео</a></h3>
+                    </li>
+					<li class="main-menu-item-logo">
+					<a href="#" class="logo"><img src="img/logo.png" alt="Главная"></a>
+					</li>
+                    <li class="main-menu-item">
+                        <h3><a href="#">Карта штата</a></h3>
+                    </li>
+                    <li class="main-menu-item">
+                        <h3><a href="#">Гостиницы</a></h3>
+                    </li>
+                </ul>
             </nav>
         <!-- </div> -->
     </header>
     <main class="container">
         <section class="welcome-box">
-            
+            <img src="img/welcomepic.jpg">
         </section>
        <div class="container headers">
-		<div class="headers-text"></div>
+		 <div class="headers-text">
+           <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1> <br>
+           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+         </div>
 		</div>
-        <section class="reasons">
-            <div class="reason-textimage">
-                <div class="reasons-text">
-                
+                <div class="reasons-textimage">
+                <div class="reasons-textbox">
+                  <h1>Настоящий <br>городок</h1>
+                  <p>-№1-</p>
+                  <p>Седона - не аттракцион для туристов, там живет своя жизнь</p>
                 </div>
-                
-            </div>
-            <div class="reasons"> <!-- нужен ли родительский элемент? -->
-                <div class="reasons-text"> <!-- Нужны ли first second в названии класса для фона или через потомков features делать -->
-                    
-                </div>
-                <div class="reasons-text">
-                   
-                </div>
-            </div>
-            <div class="reasons-textimage clearfix">
-                <div class="reasons-text"> <!-- добавить контейнер картинке -->
-                </div>
-                
             </div>
             <div class="reasons-more  clearfix">
                 <div class="reasons-textblock">
-                    
+                  <h2>Жилье</h2>
+                  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
                 <div class="reasons-textblock">
-                   
+                  <h2>Еда</h2>
+                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
                 <div class="reasons-textblock">
-                   
+                   <h2>Сувениры</h2>
+                  <p>Не только китайского, но и местного производства</p>
                 </div>
             </div>
-			<div class="reasons-textimage clearfix">
-                <div class="reasons-text bridge"> <!-- добавить контейнер картинке -->
+			<div class="reasons-textimage bridge clearfix">
+                <div class="reasons-textbox right"> <!-- добавить контейнер картинке -->
+                  <h1>Там есть<br> мост дьявола</h1>
+                  <p>-№2-</p>
+                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
                 
             </div>
-			<div class="reasons-more secondrow">
-                <div class="reasons-textblock">
-                    
+			<div class="reasons-more secondrow clearfix">
+                <div class="reasons-textbox">
+                  <h1>Небольшая площадь</h1>
+                  <p>-№3-</p>
+                  <p>Все достопримечательности находятся очень близко</p>
                 </div>
-                <div class="reasons-textblock">
-                   
+                <div class="reasons-textbox">
+                  <h1>Красивая дорога</h1>
+                  <p>-№4-</p>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
-                <div class="reasons-textblock">
-                   
+                <div class="reasons-textbox">
+                   <h1>Мало туристов</h1>
+                  <p>-№5-</p>
+                  <p>большинство едет в гранд каньон и толпится там</p>
                 </div>
             </div>
-        </section>
-        <div class="headersblock">
-			<button type="button" class="showform-btn"></button>
-		</div>
+    
+          <div class="texts-cont">
+          <h2 class="big">Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          </div>
+		  <button type="button" class="showform-btn">поиск гостиницы в седоне</button>
 		<div class="map">
 			<div class="search-hotel">
 					<div class="search-hotel-appear">
