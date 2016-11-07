@@ -1,5 +1,5 @@
 body {
-	font-family: 'PTSans', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
@@ -16,7 +16,7 @@ body {
   clear: both;
 }
 
-h1, h2{
+h1, h2, .title{
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	font-size: 	21px;
@@ -24,7 +24,7 @@ h1, h2{
 }
 
 
-h3, .search-form label, .main-menu-item a{
+h3, .search-form label, .main-menu-item a, .row-three button{
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	font-size: 	14px;
@@ -32,6 +32,11 @@ h3, .search-form label, .main-menu-item a{
     color: black;
     text-decoration: none;
   
+}
+
+.row-three button{
+  height: 27px;
+  color: white;
 }
 
 .container{
@@ -89,14 +94,12 @@ h2.big{
     background-position: left;
 }
 
-
-
 .reasons-textbox{
   box-sizing: border-box;
   outline: 3px solid purple;
   width: 400px;
   height: 256px;
-  padding: 40px;
+  padding: 30px 50px 40px 50px;
   text-align: center;
   background-color: #81b3d2;
   color: white;
@@ -105,7 +108,7 @@ h2.big{
 
 .secondrow .reasons-textbox {
   color: black;
-  background: white;
+  background: #eeeeee;
 }
 
 .right{
@@ -120,7 +123,7 @@ h2.big{
     box-sizing: border-box;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 150px;
+    padding-top: 143px;
     text-align: center;
 	width: 400px;
 	height: 330px;
@@ -149,8 +152,14 @@ h2.big{
 }
 
 .map{
-	min-height: 473px;
+	height: 473px;
 	outline: 3px solid blue;
+  position: relative;
+}
+
+.map img {
+  z-index: -1;
+  position: absolute;
 }
 
 .showform-btn{
@@ -160,9 +169,15 @@ h2.big{
 	width: 568px;
 	margin: 0 auto;	
     margin-top: 49px;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
 .search-hotel{
+    z-index: 1;
 	min-height: 395px;
 	width: 568px;
 	margin-left: auto;
@@ -175,10 +190,12 @@ footer{
 	width: 1200px;
 	margin: 0 auto;
 	outline: 3px solid red;
+    background-color: white;
+    opacity: 0.9;
 }
 
 .footerblock{
-	width: 400px;
+	width: 33.33333%;
 	height: 52px;
 	outline: 3px solid gray;
 	float: left;
@@ -196,12 +213,15 @@ footer{
     min-height: 155px;
 }
 
+.sortby{
+  display: inline-block;
+}
+
 .column-one, .column-two {
     float: left;
     min-height: 155px;
     width: 150px;
     outline: 3px solid red;
-    margin-right: 103px;
 }
 
 .column-three {
@@ -216,16 +236,40 @@ footer{
     outline: 3px solid green;
 }
 
-
-
-.hotels-list-item{
-  min-height: 150px;
-  outline: 1px solid cyan;
-  margin-bottom: 1px;
+.results-column{
+  float: left;
+  outline: 3px solid red;
 }
 
 .hotels-list-item:first-child{
   margin-top: 1px;
+}
+
+.one{
+  margin-right: 30px;
+  min-height: 90px;
+}
+
+.two{
+  height: 90px;
+}
+.three{
+  float: right;
+  height: 90px;
+}
+
+.row-one, .row-two, row-three{
+  min-height: 30px;
+  outline: 3px solid green;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-list-item{
+  
+  outline: 1px solid cyan;
+  margin-bottom: 1px;
+  padding: 30px 73px;
 }
 
 ul{
