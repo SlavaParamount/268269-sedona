@@ -58,6 +58,7 @@ h2.big{
 .main-header{
 	outline: 3px solid blue;
 	height: 56px;
+  position: relative;
 }
 
 .welcome-box{
@@ -67,10 +68,20 @@ h2.big{
 
 .headers{
 	outline: 3px solid green;
-	padding-top: 50px;
-	padding-bottom: 56px;
-    height: 110px;
+	padding-top: 46px;
+	padding-bottom: 39px;
 	}
+
+.headers-text-title{
+  margin-bottom: 30px;
+}
+
+.logo{
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+  z-index: 1;
+}
 
 .headers-text{
 	width: 576px;
@@ -81,12 +92,20 @@ h2.big{
 
 .reasons-textimage{
 	outline: 3px solid blue;
-    background-image: url(../img/pic1.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    height:256px;
+}
+
+.background-first{
+  height: 256px;
+  width: 800px;
+  float: left;
+  background: #000000 url(../img/pic1.jpg) no-repeat;
+  outline: 3px solid red;
+}
+
+.hashtag{
+  text-align: center;
 }
 
 .bridge{
@@ -94,12 +113,16 @@ h2.big{
     background-position: left;
 }
 
+.textbox-title{
+  margin-bottom: 23px;
+}
+
 .reasons-textbox{
   box-sizing: border-box;
   outline: 3px solid purple;
   width: 400px;
-  height: 256px;
-  padding: 30px 50px 40px 50px;
+ 
+  padding: 35px 50px 40px 50px;
   text-align: center;
   background-color: #81b3d2;
   color: white;
@@ -126,9 +149,10 @@ h2.big{
     padding-top: 143px;
     text-align: center;
 	width: 400px;
-	height: 330px;
+	/*height: 330px; */
 	float: left;
 	outline: 3px solid magenta;
+    margin-bottom: 70px;
 }
 
 .reasons-textimage .bridge{
@@ -144,11 +168,27 @@ h2.big{
 }
 
 .texts-cont{
-  min-height: 103px;
   margin-top: 54px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.souvenir{
+  background: url(../img/gift.png) no-repeat center 60px;
+}
+
+.house{
+  background: url(../img/house.png) no-repeat center 60px;
+}
+
+.food{
+  background: url(../img/food.png) no-repeat center 60px;
+  
+}
+
+.int-title{
+  margin-bottom: 33px;
 }
 
 .map{
@@ -183,6 +223,7 @@ h2.big{
 	margin-left: auto;
 	margin-right: auto;
 	outline: 2px solid orange;
+    background: white;
 }
 
 footer{
@@ -265,26 +306,47 @@ footer{
   padding: 0;
 }
 
+.main-menu-item a{
+  display: block;
+  padding: 15px 0px;
+  outline: 3px solid green;
+}
+
+
+
 .hotels-list-item{
-  
   outline: 1px solid cyan;
   margin-bottom: 1px;
   padding: 30px 73px;
 }
 
-ul{
-  padding: 0;
+.main-menu{
+  padding: 0px 72px;
   margin: 0;
   font-size: 0;
+  list-style: none;
+}
+
+.main-menu-item .left{
+  margin-right: 148px;  
+}
+
+.main-menu-item .right{
+  margin-left: 167px;
 }
 
 li{
   display: inline-block;
   vertical-align: top;
-  width: 20%;
-  font-size: 14px;
-  text-align: center;
+  outline: 2px solid yellow;
+  text-align: center
 }
+
+.main-menu-item a:hover{
+  color: #9ac2db;
+}
+
+
 
 a img{
   z-index: 5;

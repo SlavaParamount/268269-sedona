@@ -8,25 +8,24 @@
   </head>
   <body>
     <header class="main-header container">
+       <a href="#" class="logo"><img src="img/logo.png" alt="Главная"></a>
       <nav class="main-nav">
         <ul class="main-menu">
-          <li class="main-menu-item">
-            <h3> <a href="#">Информация</a></h3>
+          <li class="main-menu-item left">
+            <a class="left" href="#">Информация</a>
           </li>
-          <li class="main-menu-item">
-            <h3> <a href="#">Фото и видео</a></h3>
+          <li class="main-menu-item left">
+            <a class="left"href="#">Фото и видео</a>
           </li>
-		  <li class="main-menu-item-logo">
-		    <a href="#" class="logo"><img src="img/logo.png" alt="Главная"></a>
-		  </li>
-          <li class="main-menu-item">
-            <h3><a href="#">Карта штата</a></h3>
+          <li class="main-menu-item right">
+            <a class="right" href="#">Гостиницы</a>
           </li>
-          <li class="main-menu-item">
-            <h3><a href="#">Гостиницы</a></h3>
+          <li class="main-menu-item right">
+            <a class="right" href="#">Карта штата</a>
           </li>
         </ul>
       </nav>
+     
     </header>
     <main class="container">
       <section class="welcome-box">
@@ -34,69 +33,98 @@
       </section>
       <div class="container headers">
 		<div class="headers-text">
-           <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1> <br>
-           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="headers-text-title">
+           <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          </div>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
          </div>
       </div>
       <div class="reasons-textimage">
         <div class="reasons-textbox">
+          <div class="textbox-title">
           <h1>Настоящий <br>городок</h1>
+          </div>
           <p>-№1-</p>
-          <p>Седона - не аттракцион для туристов, там живет своя жизнь</p>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="background-first">
         </div>
       </div>
       <div class="reasons-more  clearfix">
-        <div class="reasons-textblock">
-          <h2>Жилье</h2>
+        <div class="reasons-textblock house clearfix">
+            <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="reasons-textblock">
+        <div class="reasons-textblock food clearfix">
           <h2>Еда</h2>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="reasons-textblock">
+        <div class="reasons-textblock souvenir clearfix">
           <h2>Сувениры</h2>
           <p>Не только китайского, но и местного производства</p>
         </div>
       </div>
       <div class="reasons-textimage bridge clearfix">
         <div class="reasons-textbox right"> <!-- добавить контейнер картинке -->
-          <h1>Там есть<br> мост дьявола</h1>
+          <div class="textbox-title">
+            <h1>Там есть<br> мост дьявола</h1>
+          </div>
           <p>-№2-</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
       <div class="reasons-more secondrow clearfix">
         <div class="reasons-textbox">
-          <h1>Небольшая<br> площадь</h1>
+          <div class="textbox-title">
+            <h1>Небольшая<br> площадь</h1>
+          </div>
           <p>-№3-</p>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="reasons-textbox">
-          <h1>Красивая<br> дорога</h1>
+          <div class="textbox-title">
+            <h1>Красивая<br> дорога</h1>
+          </div>
           <p>-№4-</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="reasons-textbox">
-          <h1>Мало туристов</h1>
+          <div class="textbox-title">
+            <h1>Мало<br> туристов</h1>
+          </div>
           <p>-№5-</p>
           <p>большинство едет в гранд каньон и толпится там</p>
         </div>
       </div>
       <div class="texts-cont">
-        <h2 class="big">Заинтересовались?</h2>
+        <h2 class="big int-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       </div>
       <button type="button" class="showform-btn">поиск гостиницы в седоне</button>
       <div class="map">
         <img src="img/map.jpg" alt="Карта Седоны">
         <div class="search-hotel">
-		  <div class="search-hotel-appear"></div>
+		  <div class="search-hotel-appear">
+          <form class="search-form" action="#" method="post">
+							<label>Дата заезда:<input type="text" name="entrance" value="24 апреля 2016"> </label> <br>           <!-- Значок календаря -->
+							<label>Дата выезда:<input type="text" name="exit" value="4 июля 2016"> </label> <br>
+							<label for="adults">Взрослые:</label>
+							<button type="button" class="plus-adults">+</button>
+							<input type="text" name="adults" id="adults" size="1">
+							<button type="button" class="minus-adults">-</button>
+							<label for="kids">Дети</label>
+							<button type="button" class="plus-kids">+</button>
+							<input type="text" name="kids" id="kids" size="1">
+							<button type="button" class="minus-adults">-</button> <br>
+							<button class="search-btn" type="submit">Найти</button>
+						</form>
+          </div>
 		</div>
       </div>
     </main>
     <footer class="main-footer clearfix">
-		<div class="footerblock">
+		<div class="footerblock hashtag">
+          <h2>#VISITSEDONA</h2>
 		</div>
 		<section class="footerblock">
 		</section>
