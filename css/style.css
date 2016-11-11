@@ -64,7 +64,26 @@ h2.big{
 .welcome-box{
 	height: 508px;
 	outline: 3px solid green;
+    background: url(../img/title-back.jpg) no-repeat;
+    padding-top: 75px;
+    box-sizing: border-box;
+    position: relative;
 	}
+
+.welcome-box::after{
+  content: "";
+  background-image: url(../img/intro-mask.png);
+  position: absolute;
+  width: 1200px;
+  height: 57px;
+  top: 451px;
+}
+
+.welcome-title{
+  outline: 3px solid yellow;
+  width: 458px;
+  margin: 0 auto;
+}
 
 .headers{
 	outline: 3px solid green;
@@ -79,7 +98,7 @@ h2.big{
 .logo{
   position: absolute;
   left: 50%;
-  margin-left: -69px;
+  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -94,6 +113,8 @@ h2.big{
 	outline: 3px solid blue;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #81b3d2;
 }
 
 .background-first{
@@ -108,9 +129,12 @@ h2.big{
   text-align: center;
 }
 
-.bridge{
+.bridge-img{
     background-image: url(../img/bridge.jpg);
     background-position: left;
+    height: 256px;
+    width: 800px;
+  float: left;
 }
 
 .textbox-title{
@@ -121,7 +145,6 @@ h2.big{
   box-sizing: border-box;
   outline: 3px solid purple;
   width: 400px;
- 
   padding: 35px 50px 40px 50px;
   text-align: center;
   background-color: #81b3d2;
@@ -192,9 +215,10 @@ h2.big{
 }
 
 .map{
-	height: 473px;
-	outline: 3px solid blue;
+  height: 473px;
+  outline: 3px solid blue;
   position: relative;
+  overflow: hidden; 
 }
 
 .map img {
@@ -217,12 +241,14 @@ h2.big{
 }
 
 .search-hotel{
-    z-index: 1;
-	min-height: 395px;
-	width: 568px;
-	margin-left: auto;
-	margin-right: auto;
-	outline: 2px solid orange;
+     z-index: 1;
+    position: absolute;
+    top: -370px;
+    min-height: 395px;
+    width: 568px;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: 2px solid orange;
     background: white;
 }
 
