@@ -70,6 +70,62 @@ h2.big{
     position: relative;
 	}
 
+.rangecost{
+  display:inline-block;
+  width: 150px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rangemid{
+  width: 2px;
+  height: 22px;
+  display: inline-block;
+  background-color: white;
+  vertical-align: middle;
+  
+}
+
+.toogle.selected {
+  background-color: #1e5081;
+}
+
+.scroll-line{
+  height: 2px;
+  width: 318px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #918381;
+  position: relative;
+}
+
+.bar{
+  height: 2px;
+  background-color: white;
+}
+
+.toogle{
+  position: absolute;
+  top: -9px;
+  border-radius: 50%;
+  background-color: #ababab;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+}
+
+.textrange{
+  border: 2px solid white;
+  width: 314px;
+  border-radius: 4px;
+  padding: 3px 0;
+}
+
 .welcome-box::after{
   content: "";
   background-image: url(../img/intro-mask.png);
@@ -296,6 +352,7 @@ footer{
     float:right;
     outline: 3px solid red;
     width: 328px;
+    background: darkgray;
 }
 
 .sortbox{

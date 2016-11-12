@@ -43,8 +43,18 @@
                 </div>
                 <div class="column-three">
                     <h3>Стоимость в сутки</h3>
-					<input type="text" value="от 0" name="min-cost">
-					<input type="text" value="до 3000" name="max-cost">
+                    <div class="textrange">
+                      <input type="text" value="от 0" name="min-cost" class="rangecost">
+                      <div class="rangemid"></div>
+                      <input type="text" value="до 3000" name="max-cost" class="rangecost">
+                    </div>
+                    <div class="scroll-range">
+                      <div class="scroll-line">
+                        <div class="bar" style="width: 70%;"></div>
+                        <div class="toogle"></div>
+                        <div class="toogle selected" style="left: 70%"></div>
+                      </div>
+                    </div>
 					<div class="change-cost"></div>
                     <button class="cost-btn" type="submit">Отправить</button>
                 </div>
