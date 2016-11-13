@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="main-header container">
+      <a href="#" class="logo"><img src="img/logo.png" alt="Главная"></a>
       <nav class="main-nav">
         <ul class="main-menu">
           <li class="main-menu-item left">
@@ -28,21 +29,27 @@
     </header>
 	<main class="container">
 		<section class="hotels-search">
-            <div class="srh-form">
-                <div class="column-one">
-                  <h3>Инфраструктура:</h3>
+            <div class="srh-form clearfix">
+                <div class="column-one clearfix">
+                    <div class="one-title">
+                      <h3>Инфраструктура:</h3>
+                    </div>
 					<label><input type="checkbox" name="pool" value="v1" checked>Бассейн</label> <br>
 					<label><input type="checkbox" name="parking" value="v2">Парковка</label> <br>
 					<label><input type="checkbox" name="wifi" value="v3">WI-FI</label>
                 </div>
-                <div class="column-two">
+                <div class="column-two clearfix">
+                  <div class="one-title">
                   <h3>Тип жилья</h3>
+                  </div>
 				  <label><input type="checkbox" name="hotel" value="v4" checked>Гостиница</label> <br>
 				  <label><input type="checkbox" name="motel" value="v5" checked>Мотель</label> <br>
 				  <label><input type="checkbox" name="flat" value="v6" checked>Апартаменты</label>
                 </div>
-                <div class="column-three">
-                    <h3>Стоимость в сутки</h3>
+                <div class="column-three clearfix">
+                    <div class="one-title">
+                      <h3>Стоимость в сутки</h3>
+                    </div>
                     <div class="textrange">
                       <input type="text" value="от 0" name="min-cost" class="rangecost">
                       <div class="rangemid"></div>
@@ -50,18 +57,18 @@
                     </div>
                     <div class="scroll-range">
                       <div class="scroll-line">
-                        <div class="bar" style="width: 70%;"></div>
+                        <div class="bar" style="width: 80%;"></div>
                         <div class="toogle"></div>
-                        <div class="toogle selected" style="left: 70%"></div>
+                        <div class="toogle selected" style="left: 80%"></div>
                       </div>
                     </div>
 					<div class="change-cost"></div>
-                    <button class="cost-btn" type="submit">Отправить</button>
+                  <button class="cost-btn" type="submit">Показать</button>
                 </div>
             </div>
         </section>
         <section class="sortbox">
-          <span class="big">Найдено</span>
+          <span class="sortbox-title">Найдено: 3</span>
 			<div class="sort">
 				<span>сортировка:</span>
 				<ul class="sortby">
@@ -80,20 +87,20 @@
         <section class="hotels-list clearfix">
           <article class="hotels-list-item clearfix">
             <div class="results-column one">
-              <img src="img/amara.jpg" width="135" height="90" alt="">
+              <img src="img/amara.jpg" width="135" height="90" alt="AMARA HOTEL PIC">
             </div>
             <div class="results-column two">
-              <div class="row-one">
-                <span class="title">AMARA RESORT &amp; SPA</span>
-              </div>
-              <div class="row-two">
-                <span>Гостиница</span>
-                <span>От 3500р.</span>
-              </div>
-              <div class="row-three">
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
-              </div>
+              <div class="descr-title">
+                      <span class="title">AMARA RESORT &amp; SPA</span>
+                    </div>
+                    <div class="descr-one">
+                      <span>Гостиница</span>
+                      <button type="button" class="descr-button">Подробнее</button>
+                    </div>
+                    <div class="descr-two">
+                      <span>От 3500р.</span>
+                      <button type="button" class="descr-button">Забронировать</button>
+                    </div>
             </div>
             <div class="results-column three">
               <div class="stars"></div>
@@ -105,15 +112,17 @@
               <img src="img/desert.jpg" width="135" height="90" alt="">
             </div>
                   <div class="results-column two">
-                      <div class="results-description">
-                          <span>DESERT QUAIL INN</span>
-                          <span>Гостиница</span>
-                          <span>От 2000р.</span>
-                      </div>
-                      <div class="btn-box">
-                          <button type="button">Подробнее</button>
-                          <button type="button">Забронировать</button>
-                      </div>
+                    <div class="descr-title">
+                      <span class="title">DESERT QUAIL INN</span>
+                    </div>
+                    <div class="descr-one">
+                      <span>Мотель</span>
+                      <button type="button" class="descr-button">Подробнее</button>
+                    </div>
+                    <div class="descr-two">
+                      <span>От 2000р.</span>
+                      <button type="button" class="descr-button">Забронировать</button>
+                    </div>  
                   </div>
                   <div class="results-column three">
                       <div class="stars"></div>
@@ -125,15 +134,17 @@
             <img src="img/vallas.jpg" width="135" height="90" alt="">
             </div>
 		    <div class="results-column two">
-		      <div class="results-description">
-				<h2>VILLAS AT POCO DIABLO</h2>
-				<p>Апартаменты</p>
-				<p>От 4000р.</p>
-		      </div>
-		      <div class="btn-box">
-		        <button type="button">Подробнее</button>
-				<button type="button">Забронировать</button>
-		      </div>
+		      <div class="descr-title">
+                      <span class="title">VILLAS AT POCO DIABLO</span>
+                    </div>
+                    <div class="descr-one">
+                      <span>Апаратменты</span>
+                      <button type="button" class="descr-button">Подробнее</button>
+                    </div>
+                    <div class="descr-two">
+                      <span>От 4000р.</span>
+                      <button type="button" class="descr-button">Забронировать</button>
+                    </div>
 		    </div>
 		    <div class="results-column three">
 		      <div class="stars"></div>

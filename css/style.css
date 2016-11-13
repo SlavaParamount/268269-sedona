@@ -16,7 +16,7 @@ body {
   clear: both;
 }
 
-h1, h2, .title{
+h1, h2, .title, .sortbox-title{
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	font-size: 	21px;
@@ -31,13 +31,9 @@ h3, .search-form label, .main-menu-item a, .row-three button{
 	line-height: 26px;
     color: black;
     text-decoration: none;
-  
 }
 
-.row-three button{
-  height: 27px;
-  color: white;
-}
+
 
 .container{
 	margin: 0 auto;
@@ -57,7 +53,6 @@ h2.big{
 
 .main-header{
 	outline: 3px solid blue;
-	height: 56px;
   position: relative;
 }
 
@@ -69,6 +64,22 @@ h2.big{
     box-sizing: border-box;
     position: relative;
 	}
+
+.cost-btn{
+  width: 133px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 	14px;
+  line-height: 26px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 3px;
+  margin-top: 12px;
+  margin-left: 96px;
+}
 
 .rangecost{
   display:inline-block;
@@ -104,6 +115,10 @@ h2.big{
   position: relative;
 }
 
+.scroll-range{
+  margin-left: 10px;
+}
+
 .bar{
   height: 2px;
   background-color: white;
@@ -123,7 +138,10 @@ h2.big{
   border: 2px solid white;
   width: 314px;
   border-radius: 4px;
-  padding: 3px 0;
+  padding: 4px 0;
+  padding-left: 3px;
+  margin-top: -6px;
+  margin-left: 10px;
 }
 
 .welcome-box::after{
@@ -326,14 +344,21 @@ footer{
 }
 
 .hotels-search{
-    min-height: 157px;
     outline: 3px solid pink;
     padding: 30px 72px;
+    background: #296514 url(../img/filter_back.jpg) no-repeat;
+    color: white;
 }
+
+.hotels-search h3{
+  color: white;
+}
+
+
 
 .srh-form{
     outline: 3px solid purple;
-    min-height: 155px;
+    
 }
 
 .sortby{
@@ -342,22 +367,49 @@ footer{
 
 .column-one, .column-two {
     float: left;
-    min-height: 155px;
     width: 150px;
     outline: 3px solid red;
 }
 
+.one-title{
+  margin-top: -20px;
+  font-family: 'PT Sans Bold' sans-serif ;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.column-one{
+  margin-right: 105px;
+}
+
+.column-one label, .column-two label {
+  display: block;
+  margin-top: 5px;
+}
+
 .column-three {
-    min-height: 155px;
     float:right;
     outline: 3px solid red;
     width: 328px;
-    background: darkgray;
 }
 
 .sortbox{
-    min-height: 86px;
     outline: 3px solid green;
+    padding: 32px 73px;
+  padding-bottom: 20px;
+}
+
+.sort{
+  margin-left: 160px;
+  font: "PT Sans" sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: -31px;
+}
+
+.sort-style{
+  padding-right: 30px;
 }
 
 .results-column{
@@ -366,28 +418,47 @@ footer{
 }
 
 .hotels-list-item:first-child{
-  margin-top: 1px;
 }
 
-.one{
+.hotels-list-item .one{
   margin-right: 30px;
-  min-height: 90px;
+
 }
 
-.two{
-  height: 90px;
+.hotels-list-item .two{
+  
+  width: 258px;
 }
-.three{
+.hotels-list-item .three{
   float: right;
   height: 90px;
 }
 
-.row-one, .row-two, row-three{
-  min-height: 30px;
-  outline: 3px solid green;
-  margin: 0;
-  padding: 0;
+.descr-one, .descr-two{
+  float: left;
+  outline: 2px solid black;
 }
+
+.descr-title{
+  margin-bottom: 4px;
+}
+
+.descr-one{
+  width: 110px;
+  margin-right: 6px;
+}
+
+.descr-two{
+  width: 142px;
+}
+
+.descr-button{
+  display: block;
+  height: 27px;
+  width: 100%;
+  margin-top: 12px;
+}
+
 
 .main-menu-item a{
   display: block;
