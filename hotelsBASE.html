@@ -34,21 +34,27 @@
                     <div class="one-title">
                       <h3>Инфраструктура:</h3>
                     </div>
-					<label><input type="checkbox" name="pool" value="v1" checked>Бассейн</label> <br>
-					<label><input type="checkbox" name="parking" value="v2">Парковка</label> <br>
-					<label><input type="checkbox" name="wifi" value="v3">WI-FI</label>
+					<input type="checkbox" name="pool" value="v1" id="pool" checked>
+                    <label for="pool">Бассейн</label> <br>
+					<input type="checkbox" name="parking" value="v2" id="parking">
+                    <label for="parking">Парковка</label> <br>
+					<input type="checkbox" name="wifi" value="v3" id="wifi">
+                    <label for="wifi">WI-FI</label>
                 </div>
                 <div class="column-two clearfix">
                   <div class="one-title">
                   <h3>Тип жилья</h3>
                   </div>
-				  <label><input type="checkbox" name="hotel" value="v4" checked>Гостиница</label> <br>
-				  <label><input type="checkbox" name="motel" value="v5" checked>Мотель</label> <br>
-				  <label><input type="checkbox" name="flat" value="v6" checked>Апартаменты</label>
+				  <input type="checkbox" name="hotel" value="v4" id="hotel" checked>
+                  <label for="hotel">Гостиница</label> <br>
+				  <input type="checkbox" name="motel" value="v5" id="motel" checked>
+                  <label for="motel">Мотель</label> <br>
+				  <input type="checkbox" name="flat" value="v6" id="flat" checked>
+                  <label for="flat">Апартаменты</label>
                 </div>
                 <div class="column-three clearfix">
                     <div class="one-title">
-                      <h3>Стоимость в сутки</h3>
+                      <h3>Стоимость в сутки (Р):</h3>
                     </div>
                     <div class="textrange">
                       <input type="text" value="от 0" name="min-cost" class="rangecost">
@@ -154,9 +160,13 @@
         </section>
 	</main>
 	<footer class="main-footer clearfix">
-		<div class="footerblock">
+		<div class="footerblock hashtag">
+          <h2>#VISITSEDONA</h2>
 		</div>
-		<section class="footerblock">
+		<section class="footerblock socials">
+          <div class="social twitter"><i class="icon-twitter"></i></div>
+          <div class="social facebook"><i class="icon-facebook"></i></div>
+          <div class="social youtube"><i class="icon-youtube"></i></div>
 		</section>
 		<section class="footerblock">
 		</section>
