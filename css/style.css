@@ -1,42 +1,4 @@
-@font-face {
-  font-weight: normal;
-  font-style: normal;
 
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
-}
-
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-
-  speak: none;
-}
-
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-star::before { content: "\2605"; } /* "★" */
-.icon-check-off::before { content: "\2610"; } /* "☐" */
-.icon-check-on::before { content: "\2611"; } /* "☑" */
-.icon-calendar::before { content: "\e800"; } /* "" */
-.icon-plus::before { content: "\e801"; } /* "" */
-.icon-minus::before { content: "\e802"; } /* "" */
-.icon-youtube::before { content: "\f39e"; } /* "" */
 
 body {
 	font-family: 'PT Sans', sans-serif;
@@ -578,7 +540,8 @@ li{
 }
 
 .icon-twitter, .icon-youtube, .icon-facebook{
-  font-size: 20px;
+  width: 20px;
+  height: 20px;
   color: white;
 }
 
@@ -596,9 +559,9 @@ li{
 .srh-form input[type="checkbox"] + label::before{
   content: "";
   display: inline-block;
-  background: url(../img/check_off.png);
+  background: url(../img/sprite.png);
+  background-position: 0px -32px;
   vertical-align:bottom;
-  font-size: 30px;
   margin-right: 9px;
   width: 22px;
   height: 22px;
@@ -608,9 +571,40 @@ li{
   content: "";
   width: 26px;
   height: 22px;
-  background: url(../img/check_on.png);
+  background: url(../img/sprite.png);
+  background-position: 0px -64px;
   border: none;
   margin-right: 5px;
+}
+
+.social.twitter::after{
+  content: "";
+  background: url(../img/sprite.png);
+  background-position: 0px -125px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 15px;
+}
+
+.social.facebook::after{
+  content: "";
+  background: url(../img/sprite.png);
+  background-position: 0px -96px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 19px;
+}
+
+.social.youtube::after{
+  content: "";
+  background: url(../img/sprite.png);
+  background-position: 0px -150px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 16px;
 }
 
 a img{
