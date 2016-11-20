@@ -109,16 +109,32 @@
         <div class="search-hotel">
 		  <div class="search-hotel-appear">
           <form class="search-form" action="#" method="post">
-							<label>Дата заезда:<input type="text" name="entrance" value="24 апреля 2016"> </label> <br>           <!-- Значок календаря -->
-							<label>Дата выезда:<input type="text" name="exit" value="4 июля 2016"> </label> <br>
-							<label for="adults">Взрослые:</label>
-							<button type="button" class="plus-adults">+</button>
-							<input type="text" name="adults" id="adults" size="1">
-							<button type="button" class="minus-adults">-</button>
-							<label for="kids">Дети</label>
-							<button type="button" class="plus-kids">+</button>
-							<input type="text" name="kids" id="kids" size="1">
-							<button type="button" class="minus-adults">-</button> <br>
+            <div class="form-line clearfix">
+							<label for="entrance">Дата заезда:</label>
+                              <input type="text" name="entrance" id="entrance" value="24 апреля 2016">  <br>           <!-- Значок календаря -->
+            </div>
+            <div class="form-line clearfix">
+							<label for="exit">Дата выезда:</label>
+                              <input type="text" name="exit" id="exit" value="4 июля 2016">  <br>
+            </div>
+            <div class="form-line clearfix">
+              <div class="half-line-left">
+                <label for="adults">Взрослые:</label>
+                <div class="amount-adults">
+                  <button type="button" class="plus-adults">+</button>
+                  <input type="text" name="adults" id="adults" size="1">
+                  <button type="button" class="minus-adults">-</button>
+                </div>
+              </div>
+              <div class="half-line-right">
+                <label for="kids">Дети</label>
+                <div class="amount-kids">
+                  <button type="button" class="plus-kids">+</button>
+                  <input type="text" name="kids" id="kids" size="1">
+                  <button type="button" class="minus-adults">-</button> <br>
+                </div>
+              </div>
+            </div>
 							<button class="search-btn" type="submit">Найти</button>
 						</form>
           </div>
@@ -129,12 +145,16 @@
 		<div class="footerblock hashtag">
           <h2>#VISITSEDONA</h2>
 		</div>
-		<section class="footerblock socials">
+		<section class="footerblock socials clearfix">
           <a href="#" class="social twitter"></a>
           <a href="#" class="social facebook"></a>
           <a href="#" class="social youtube"></a>
 		</section>
-		<section class="footerblock">
+		<section class="footerblock madeof clearfix">
+          <div class="copyright text">WEBSITE BY</div>
+          <div class="copyright academylogo">
+            <img src="img/academylogo.png" alt="Академия HTML">
+          </div>
 		</section>
     </footer>
   

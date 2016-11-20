@@ -26,7 +26,7 @@ h1, h2, .title, .sortbox-title{
 }
 
 
-h3, .search-form label, .main-menu-item a, .row-three button{
+h3, .search-form label, .main-menu-item a, .row-three button, .form-line input, .copyright{
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	font-size: 	14px;
@@ -319,17 +319,90 @@ h2.big{
 .search-hotel{
      z-index: 1;
     position: absolute;
-    top: -370px;
+   /* top: -370px; */
     min-height: 395px;
     width: 568px;
     left: 50%;
     transform: translateX(-50%);
     outline: 2px solid orange;
     background: white;
+    box-sizing: border-box;
+    padding: 55px;
+}
+
+.form-line{
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+
+.form-line label{
+  display: block;
+  float: left;
+  margin-top: 6px;
+}
+
+.amount-adults, .amount-kids{
+  width: 114px;
+  float: right;
+  padding: 0;
+  font-size: 0;
+}
+
+.half-line-left, .half-line-right{
+  display: inline-block;
+  width: 49%;
+  vertical-align: middle;
+}
+
+.half-line-right{
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+.form-line input{
+  background: none;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 4px 0px;
+  border: 2px solid #f2f2f2;
+  text-transform: uppercase;
+  padding-left: 15px;
+  display: block;
+  float: right;
+  width: 331px;
+}
+
+.amount-adults button, .amount-kids button, .amount-adults input, .amount-kids input{
+  width: 38px;
+  display: inline-block;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 5px 0;
+  border: 0;
+  font-size: 14px;
+  line-height: 26px;
+  box-sizing: border-box;
+}
+
+.search-btn{
+  margin-top: 30px;
+}
+
+.search-btn{
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background: #81b3d2;
+  border: none;
+  width: 100%;
+  padding: 15px;
 }
 
 footer{
-	min-height: 120px;
+	
 	width: 1200px;
 	margin: 0 auto;
 	outline: 3px solid red;
@@ -339,10 +412,17 @@ footer{
 
 .footerblock{
 	width: 33.33333%;
-	height: 52px;
+	
 	outline: 3px solid gray;
 	float: left;
 	margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.copyright{
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .hotels-search{
@@ -350,6 +430,17 @@ footer{
     padding: 30px 72px;
     background: #296514 url(../img/filter_back.jpg) no-repeat;
     color: white;
+}
+
+.madeof{
+  box-sizing: border-box;
+  padding-left: 102px;
+  padding-top: 2px;
+}
+
+.academylogo{
+  margin-left: 4px;
+  margin-top: 6px;
 }
 
 .hotels-search h3{
@@ -405,6 +496,36 @@ footer{
   padding-bottom: 20px;
 }
 
+.sortboxleft{
+  float: left;
+}
+
+.sortboxright{
+  float: right;
+}
+
+.triangle-up{
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #cccccc;
+}
+
+.triangle-down{
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #81b3d2;
+    margin-left: 10px;
+}
+
+.triangle-up, .triangle-down{
+  display: inline-block;
+  vertical-align:bottom;
+}
+
 .sort{
   margin-left: 160px;
   font: "PT Sans" sans-serif;
@@ -422,7 +543,26 @@ footer{
   outline: 3px solid red;
 }
 
+.descr-title .title:hover{
+  color: #81b3d2;
+}
+
+
+.descr-title .title{
+  text-decoration: none;
+  color: black;
+}
+
+.descr-title a{
+  text-decoration: none;
+  color: black;
+}
+
 .hotels-list-item:first-child{
+}
+
+.hotels-list-item img{
+  display: block;
 }
 
 .hotels-list-item .one{
@@ -436,7 +576,40 @@ footer{
 }
 .hotels-list-item .three{
   float: right;
-  height: 90px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.star{
+  display: block;
+  float: right;
+  background-image: url(../img/star.png);
+  margin-left: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+.star:last-child{
+  margin-left: 0;
+}
+
+.stars{
+  height: 16px;
+  outline: 1px solid black;
+  font-size: 0px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 52px;
+}
+
+.three p{
+  display: inline-block;
+  outline: 1px solid pink;
+  width: 110px;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin: 0;
+  color: #666666;
 }
 
 .descr-one, .descr-two{

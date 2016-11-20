@@ -2,130 +2,162 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-   <header class="main-header">
-       <!-- <div class="container"> -->
-            <nav class="main-nav">
-                <ul class="main-menu">
-                    <li class="main-menu-item">
-                        <a href="#"><h3>Информация</h3></a>
-                    </li>
-                    <li class="main-menu-item">
-                        <a href="#"><h3>Фото и видео</h3></a>
-                    </li>
-					<li class="main-menu-item-logo">
-					<a href="#" class="logo"><img src="img/logo.png" alt="Главная"></a>
-					</li>
-                    <li class="main-menu-item">
-                        <a href="#"><h3>Карта штата</h3></a>
-                    </li>
-                    <li class="main-menu-item">
-                        <a href="#"><h3>Гостиницы</h3></a>
-                    </li>
-                </ul>
-            </nav>
-        <!-- </div> -->
+    <header class="main-header container">
+       <a href="#" class="logo"><img src="img/logo.png" alt="Главная"></a>
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li class="main-menu-item left">
+            <a class="left" href="#">Информация</a>
+          </li>
+          <li class="main-menu-item left">
+            <a class="left"href="#">Фото и видео</a>
+          </li>
+          <li class="main-menu-item right">
+            <a class="right" href="#">Гостиницы</a>
+          </li>
+          <li class="main-menu-item right">
+            <a class="right" href="#">Карта штата</a>
+          </li>
+        </ul>
+      </nav>
+     
     </header>
     <main class="container">
-        <section class="welcome-box">
-            <img src='img/welcome.jpg' width="1200px" height="780px">
-        </section>
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <section class="reasons">
-            <div class="reason-textimage">
-                <div class="reasons-text">
-                    <h2>Настоящий городок</h2>
-                    <p class="number">№1</p>
-                    <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                </div>
-                <img src="img/pic1.jpg" width="800" height="256" alt="Седона">
+      <section class="welcome-box">
+        <div class="welcome-title">
+          <img src="img/title-intro.png" alt="WELCOME TO SEDONA" width="458" height="352">
+        </div>
+      </section>
+      <div class="container headers">
+		<div class="headers-text">
+          <div class="headers-text-title">
+           <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          </div>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+         </div>
+      </div>
+      <div class="reasons-textimage">
+        <div class="reasons-textbox">
+          <div class="textbox-title">
+          <h1>Настоящий <br>городок</h1>
+          </div>
+          <p>-№1-</p>
+          <p>Седона - не аттракцион для туристов, там течет своя жизньь</p>
+        </div>
+        <div class="background-first">
+        </div>
+      </div>
+      <div class="reasons-more  clearfix">
+        <div class="reasons-textblock house clearfix">
+            <h2>Жилье</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="reasons-textblock food clearfix">
+          <h2>Еда</h2>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="reasons-textblock souvenir clearfix">
+          <h2>Сувениры</h2>
+          <p>Не только китайского, но и местного производства</p>
+        </div>
+      </div>
+      <div class="reasons-textimage clearfix">
+        <div class="bridge-img"></div>
+        <div class="reasons-textbox right"> <!-- добавить контейнер картинке -->
+          <div class="textbox-title">
+            <h1>Там есть<br> мост дьявола</h1>
+          </div>
+          <p>-№2-</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </div>
+      <div class="reasons-more secondrow clearfix">
+        <div class="reasons-textbox">
+          <div class="textbox-title">
+            <h1>Небольшая<br> площадь</h1>
+          </div>
+          <p>-№3-</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="reasons-textbox">
+          <div class="textbox-title">
+            <h1>Красивая<br> дорога</h1>
+          </div>
+          <p>-№4-</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="reasons-textbox">
+          <div class="textbox-title">
+            <h1>Мало<br> туристов</h1>
+          </div>
+          <p>-№5-</p>
+          <p>большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </div>
+      <div class="texts-cont">
+        <h2 class="big int-title">Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </div>
+      <button type="button" class="showform-btn">поиск гостиницы в седоне</button>
+      <div class="map">
+        <img src="img/map.jpg" alt="Карта Седоны">
+        <div class="search-hotel">
+		  <div class="search-hotel-appear">
+          <form class="search-form" action="#" method="post">
+            <div class="form-line clearfix">
+							<label for="entrance">Дата заезда:</label>
+                              <input type="text" name="entrance" id="entrance" value="24 апреля 2016">  <br>           <!-- Значок календаря -->
             </div>
-            <div class="reasons"> <!-- нужен ли родительский элемент? -->
-                <div class="reasons-text"> <!-- Нужны ли first second в названии класса для фона или через потомков features делать -->
-                    <h2>Жилье</h2>
-                    <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
-                </div>
-                <div class="reasons-text">
-                    <h2>Еда</h2>
-                    <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
-                </div>
-                <div class="reasons-text">
-                    <h2>Сувениры</h2>
-                    <p>Не только китайского, но и местного производства!</p>
-                </div>
+            <div class="form-line clearfix">
+							<label for="exit">Дата выезда:</label>
+                              <input type="text" name="exit" id="exit" value="4 июля 2016">  <br>
             </div>
-            <div class="reasons-textimage">
-                <div class="reasons-text">
-                    <h2>Там есть мост дьявола</h2>
-                    <p class="number">№2</p>
-                    <p>Да, по нему можно пройти! Если, конечно, осмелитесь!</p>
+            <div class="form-line clearfix">
+              <div class="half-line-left">
+                <label for="adults">Взрослые:</label>
+                <div class="amount-adults">
+                  <button type="button" class="plus-adults">+</button>
+                  <input type="text" name="adults" id="adults" size="1">
+                  <button type="button" class="minus-adults">-</button>
                 </div>
-                <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+              </div>
+              <div class="half-line-right">
+                <label for="kids">Дети</label>
+                <div class="amount-kids">
+                  <button type="button" class="plus-kids">+</button>
+                  <input type="text" name="kids" id="kids" size="1">
+                  <button type="button" class="minus-adults">-</button> <br>
+                </div>
+              </div>
             </div>
-            <div class="reasons-more">
-                <div class="reasons-text">
-                    <h2>Небольшая площадь</h2>
-                    <p class="number">№3</p>
-                    <p>Все достопримечательности находятся очень близко</p>
-                </div>
-                <div class="reasons-text">
-                    <h2>Красивая дорога</h2>
-                    <p class="number">№4</p>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </div>
-                <div class="reasons-text">
-                    <h2>Мало туристов</h2>
-                    <p class="number">№5</p>
-                    <p>Большинство едет в Гранд-Каньон и толпится там</p>
-                </div>
-            </div>
-        </section>
-        <h2 class="big">Заинтересовались?</h2>
-		<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-		<div class="map">
-			<div class="search-hotel">
-				<a href="#" class='search-hotel-title'>Поиск гостиницы в Седоне</a>
-					<div class="search-hotel-appear">
-						<form class="search-form" action="#" method="post">
-							<label>Дата заезда:<input type="text" name="entrance" value="24 апреля 2016"> </label> <br>           <!-- Значок календаря -->
-							<label>Дата выезда:<input type="text" name="exit" value="4 июля 2016"> </label> <br>
-							<label for="adults">Взрослые:</label>
-							<button type="button" class="plus-adults">+</button>
-							<input type="text" name="adults" id="adults" size="1">
-							<button type="button" class="minus-adults">-</button>
-							<label for="kids">Дети</label>
-							<button type="button" class="plus-kids">+</button>
-							<input type="text" name="kids" id="kids" size="1">
-							<button type="button" class="minus-adults">-</button> <br>
 							<button class="search-btn" type="submit">Найти</button>
 						</form>
-					</div>
-			</div>
-			<img src="#" alt="Карта Седоны">
+          </div>
 		</div>
+      </div>
     </main>
-    <footer class="main-footer">
-		<div class="footer-hashtag">
-			<h2>#VISITSEDONA</h2>
+    <footer class="main-footer clearfix">
+		<div class="footerblock hashtag">
+          <h2>#VISITSEDONA</h2>
 		</div>
-		<section class="social-btn">
-			<a href="#">Вконтакте</a>
-			<a href="#">Facebook</a>
-			<a href="#">Youtube</a>
+		<section class="footerblock socials clearfix">
+          <a href="#" class="social twitter"></a>
+          <a href="#" class="social facebook"></a>
+          <a href="#" class="social youtube"></a>
 		</section>
-		<section class="footer-copyight">
-		<p>Website by <a href="#">HTML Academy</a></p>
+		<section class="footerblock madeof clearfix">
+          <div class="copyright text">WEBSITE BY</div>
+          <div class="copyright academylogo">
+            <img src="img/academylogo.png" alt="Академия HTML">
+          </div>
 		</section>
     </footer>
-    
-     
-      
-      
-      
+  
       
       
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
